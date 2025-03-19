@@ -1,0 +1,128 @@
+<?php include('footer.php') ; ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <title>APID</title> 
+</head>
+<body>
+
+     <div id="nav" class="container-fluid">
+               <div class="row">
+                   <div class="col-md-3" id="logo">
+                       <span>APID.com</span>
+                   </div>
+                  
+               </div>
+           </div>
+    <section><br><br>
+        <h2 style="font-size: 30px;">Soyez les bienvenus sur cette plateforme instructive</h2>
+    </section>
+    </nav>
+</body>
+</html>
+<div>
+    <a href="index.html">Accueil</a> |
+    <a href="formation.html">Formations</a> | 
+    <a href="publicite.html">Publicités</a> | 
+    <a href="publicite.html">Actualités</a><br>
+
+
+</div><br>
+
+<div class="ngowa">
+    <div id="diaporama">
+        
+       
+        <img id="image3" src="images/image3.jpg" style="display: block;">  
+        <img id="image4" src="images/image4.jpg" style="display: block;"> 
+        <img id="image7" src="images/image7.png" style="display: block;"> 
+    </div>
+    </div>
+
+    <script>
+        function diaporama() {
+            var images = document.querySelectorAll("#diaporama img");
+            var currentIndex = 0;
+
+            setInterval(function() {
+                images[currentIndex].style.display = "none";
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.display = "block";
+            }, 3000); // Changement toutes les 3 secondes
+        }
+
+        diaporama();
+    </script>
+
+    <style>
+
+#logo img{
+        width: 50px;
+        border-radius: 100%;
+        }
+
+
+body {
+    background-color: rgb(126, 174, 247);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 10;
+    padding: 10;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+#diaporama {
+        width: 100%;
+        height: 410px;
+        text-align: center;
+        overflow: hidden;
+        text-align: center;
+    }
+
+
+    #diaporama img {
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+        text-align: center;
+    }
+    
+  .ngowa {
+        position: relative;
+        width: 100%;
+        height: 410px;
+        box-shadow: 2px 5px 15px 5px black;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+        
+        
+    }
+
+    </style><br>
+    
+      </body>
+</html>
+
+<footer>
+    <p>Muhindo Nelson.web service</p>
+    <a href= "confid.html">Confidentialité</a> | 
+    <a href= "service.html">Services</a> | 
+    <a href= "nous.html">Nous</a> 
+</footer>
+
+

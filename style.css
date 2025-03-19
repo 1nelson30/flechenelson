@@ -1,0 +1,132 @@
+
+
+Body {
+    overflow-x: hidden;
+    background-color: rgb(126, 174, 247);
+    Font-family : Arial, sans-serif ;
+    Text-align : center ;
+    Margin : 10 ;
+    Padding : 10 ;
+}
+
+Header {
+    Background-color : #02180c ;
+    Color : rgb(146, 20, 224) ;
+    Padding : 10px 0 ;
+}
+
+Nav ul {
+    List-style-type : none ;
+    Padding : 0 ;
+    font-weight: 300px;
+    letter-spacing: 1px;
+    animation: show 1s forwards;
+    transform: translateX(-100%);
+    color: #007bff;
+}
+
+Nav ul li {
+    Display : inline ;
+    Margin : 0 15px ;
+}
+
+Nav ul li a {
+    Color : white ;
+    Text-decoration : none ;
+   
+}
+
+@keyframes show {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+#nav{
+height: 50px;
+color: white;
+font-size: 17px;
+position: fixed;
+width: 96%;
+Text-align : center ;
+Margin : 10 ;
+Padding : 10 ;
+}
+ 
+
+.image-slider {
+    Position : relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 2px 5px 15px 5px rgb(15, 190, 94);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slide {
+    Display : none ;
+    Width : 100% ;
+}
+
+.muhindo {
+    font-family: var(#007bff);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+    box-shadow: 2px 5px 15px 5px black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+Footer {
+    Background-color : #6eb5f0 ;
+    Color : rgb(240, 243, 242) ;
+    Padding : 10px 0 ;
+    margin: 10px;
+}
+
+Footer a {
+    Color : rgb(247, 240, 244) ;
+    font-family: var(#007bff);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 200;
+    position: relative;
+    box-shadow: 2px 5px 15px 5px rgb(219, 21, 130);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 40%;
+    border-color: aquamarine;
+  
+}
+
+Footer p {
+    font-family: var(#007bff);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 200;
+    position: relative;
+    box-shadow: 2px 5px 15px 5px black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 40%;
+}
+
+#logo img{
+    width: 50px;
+    border-radius: 100%;
+    Color : rgb(247, 240, 244) ;
+    font-family: var(#007bff);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 200;
+    position: relative;
+    box-shadow: 2px 5px 15px 5px rgb(10, 221, 140);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-color: aquamarine;
+  }
+  
+

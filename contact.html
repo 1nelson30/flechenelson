@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang= "fr">
+<head>
+    <meta charset= "UTF-8">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel= "stylesheet" href= "style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href= "index.html">Accueil</a></li>
+                <li><a href= "#">Contact</a></li>
+                <li><a href= "admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="contact.php" method= "POST">
+    <h1>Rejoignez-nous!</h1>
+    <p>Cliquez sur le lien ci-dessous pour nous rejoindre :</p>
+    <a id="whatsapp-link" href= "#" target= "_blank">Groupe WhatsApp</a>
+
+    <div class="contact-info">
+         <p>numero whatsapp: <a href="+243 978 289 603">+243 978 289 603</a></p>
+        <p>Email : <span id= "email">nelsonemuhindo@gmail.com</span></p>
+        <a href="mailto:nelsonemuhindo@gmail.com?subject=demande d'information&body=bonjour,">nelsonemuhindo@gmail.com</a>
+    </div>
+
+    <script>
+        // Remplacez par votre lien de groupe WhatsApp
+        const groupLink = "https://chat.whatsapp.com/GzlcqglLYlvJh5jXjbd1Ry";
+
+        // Affiche le lien du groupe WhatsApp
+        document.getElementById('whatsapp-link').href = groupLink ;
+
+        // Optionnel : Si vous souhaitez afficher le numéro WhatsApp dans un format cliquable
+        const whatsappNumber ="0978289603"; // Remplacez par votre numéro sans espaces ni caractères spéciaux
+        const whatsappUrl = "https://wa.me/${0978289603}";
+        document.getElementById('0978289603').innerHTML = <a href= "${whatsappUrl}" target= "_blank">${0978289603}</a> ;
+    </script>
+</form>
+
+</body>
+</html>
+<style>
+
+
+
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 10;
+    padding: 10;
+
+}
+</style>
+<footer>
+    <p>Muhindo Nelson.web service</p>
+    <a href= "#">Logistique</a> | 
+    <a href= "#">Autres services</a> | 
+    <a href= "#">systèmes</a> 
+</footer>
+
