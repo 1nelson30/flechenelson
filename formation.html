@@ -167,36 +167,6 @@
         <br><br>
         <input type="submit" value="Envoyer le fichier">
     </form><br><br>
-    <script>
-    const express = require('express');
-const multer = require('multer');
-const path = require('path');
-
-const app = express();
-const PORT = 3000;
-
-// Configuration de multer pour stocker les fichiers téléchargés
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'uploads/'); // Dossier où les fichiers seront stockés
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname)); // Renomme le fichier
-    }
-});
-
-const upload = multer({ storage: storage });
-
-// Route pour gérer le téléchargement
-app.post('/upload', upload.single('file-upload'), (req, res) => {
-    res.send('Fichier téléchargé avec succès !');
-});
-
-// Démarrage du serveur
-app.listen(PORT, () => {
-    console.log(Serveur en écoute sur http://localhost:${PORT});
-});
-
-</script>
+   
 </body>
 </html>
